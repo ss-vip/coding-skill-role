@@ -11,11 +11,14 @@
 * **`./SKILLS/devops-runtime.md` (技術執行技能)**
   * 對指令執行（如 `npm run dev`）採用背景運作，防止 Agent 卡死；內含 Windows / Unix 跨平台的進程管理（PID/Port）與檢查指令。
 
+* **`./SKILLS/fullstack.md` (前後端整合技能)**
+  * 前端：Vanilla-first、流體排版、Design Token、WCAG AA。後端：API 設計、參數化查詢、安全錯誤處理、Secrets 管理。
+
 * **`./SKILLS/mcp-governance.md` (工具使用技能)**
   * 外部工具控管，自動感知載入工具與長推理模型的調用優先級，防止 Agent 不正確使用工具或進行全域掃描。
 
 * **`./SKILLS/security-runtime.md` (安全策略技能)**
-  * 基本安全觀念與風險意識。
+  * 信任邊界、提示注入防禦、外部資料驗證，防止 Agent 執行隱藏指令或權限提升。
 
 * **`MCP Tools` (常用的 MCP 工具)**
   * [long-reasoning-mcp](https://github.com/harshpreet931/longReasoningMCP)
@@ -38,6 +41,7 @@
   "instructions": [
     "https://raw.githubusercontent.com/ss-vip/coding-agent/main/coder-agent.md",
     "https://raw.githubusercontent.com/ss-vip/coding-agent/main/SKILLS/devops-runtime.md",
+    "https://raw.githubusercontent.com/ss-vip/coding-agent/main/SKILLS/fullstack.md",
     "https://raw.githubusercontent.com/ss-vip/coding-agent/main/SKILLS/mcp-governance.md",
     "https://raw.githubusercontent.com/ss-vip/coding-agent/main/SKILLS/security-runtime.md"
   ]
