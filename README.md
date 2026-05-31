@@ -12,7 +12,7 @@
   * 對指令執行（如 `npm run dev`）採用背景運作，防止 Agent 卡死；內含 Windows / Unix 跨平台的進程管理（PID/Port）與檢查指令。
 
 * **`./SKILLS/fullstack.md` (前後端整合技能)**
-  * 前端：Vanilla-first、流體排版、Design Token、WCAG AA。後端：API 設計、參數化查詢、安全錯誤處理、Secrets 管理。
+  * 前端：Framework-aware（框架與套件優先或 fallback 至 Vanilla）、排版與創意設計思考。後端：RESTful API、參數化查詢、安全錯誤處理、Schema 驗證。
 
 * **`./SKILLS/mcp-governance.md` (工具使用技能)**
   * 外部工具控管，自動感知載入工具與長推理模型的調用優先級，防止 Agent 不正確使用工具或進行全域掃描。
@@ -20,10 +20,15 @@
 * **`./SKILLS/security-runtime.md` (安全策略技能)**
   * 信任邊界、提示注入防禦、外部資料驗證，防止 Agent 執行隱藏指令或權限提升。
 
-* **`MCP Tools` (常用的 MCP 工具)**
+* **`MCP Tools` (常用 MCP 工具)**
   * [long-reasoning-mcp](https://github.com/harshpreet931/longReasoningMCP)
   * [@modelcontextprotocol/server-memory](https://www.npmjs.com/package/@modelcontextprotocol/server-memory)
   * [duckduckgo-mcp-server](https://github.com/nickclyde/duckduckgo-mcp-server)
+
+
+* **其他 MCP 工具**
+  * [scrapling](https://github.com/D4Vinci/Scrapling)
+  * [cloak-browser-mcp](https://npmx.dev/package/@devinwangd/cloak-browser-mcp)
 
 * **`skills` (全域常用的技能)**
   * [code-review](https://github.com/awesome-skills/code-review-skill)
@@ -87,7 +92,15 @@
       ".idea/**",
       ".env*",
       "coverage/**",
-      ".wrangler/**"
+      ".wrangler/**",
+      "__pycache__/**",
+      "*.pyc",
+      ".pytest_cache/**",
+      "obj/**",
+      "bin/**",
+      "*.tsbuildinfo",
+      ".vercel/**",
+      ".netlify/**"
     ]
   },
   "plugin": [
